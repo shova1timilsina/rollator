@@ -1,0 +1,30 @@
+# Python dependencies for Smart Rollator
+
+# Core dependencies
+numpy>=1.21.0
+opencv-python>=4.5.0
+
+# ROS 2 packages (installed via rosdep/colcon)
+# rclpy
+# std-msgs
+# sensor-msgs
+# geometry-msgs
+# cv-bridge
+
+# Optional for visualization
+matplotlib>=3.4.0
+
+# Optional for data logging
+pandas>=1.3.0
+
+# Optional for scientific computing
+scipy>=1.7.0
+
+# Optional for machine learning
+# torch>=1.9.0  # Uncomment if adding ML features
+# torchvision>=0.10.0
+
+# Development tools
+black>=21.0  # Code formatting
+flake8>=3.9.0  # Linting
+pytest>=6.0  # Testing
