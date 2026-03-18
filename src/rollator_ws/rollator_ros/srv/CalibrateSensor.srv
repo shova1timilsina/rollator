@@ -1,0 +1,4 @@
+uint32 camera_index
+---
+bool success
+string calibration_data

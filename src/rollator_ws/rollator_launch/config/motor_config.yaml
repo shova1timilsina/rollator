@@ -1,0 +1,33 @@
+# Motor controller configuration
+
+motor:
+  # Serial port configuration
+  port: "/dev/ttyUSB0"
+  baudrate: 115200
+  timeout_ms: 100
+  
+  # Motor limits
+  max_velocity_m_s: 1.0
+  max_acceleration_m_s2: 0.5
+  
+  # Differential drive parameters
+  track_width_mm: 400.0  # Distance between left and right wheels
+  wheel_radius_mm: 50.0  # Wheel radius
+  
+  # Safety limits
+  max_current_A: 10.0
+  max_temperature_C: 60.0
+  
+  # Timeout for motor communication (ms)
+  command_timeout_ms: 500
+
+# Command mapping
+commands:
+  # Velocity scaling
+  velocity_scale: 1.0
+  
+  # Dead zone (minimum velocity to command)
+  dead_zone_m_s: 0.01
+  
+  # Publishing rate
+  publish_rate_hz: 10

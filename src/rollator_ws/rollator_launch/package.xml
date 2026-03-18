@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>rollator_launch</name>
+  <version>0.0.1</version>
+  <description>Launch files for Smart Rollator</description>
+  <maintainer email="developer@rollator.local">Smart Rollator Team</maintainer>
+  <license>MIT</license>
+
+  <url type="website">https://github.com/rollator/rollator</url>
+  <author email="developer@rollator.local">Smart Rollator Team</author>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>rollator_sensor</exec_depend>
+  <exec_depend>rollator_motor</exec_depend>
+  <exec_depend>rollator_gait</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

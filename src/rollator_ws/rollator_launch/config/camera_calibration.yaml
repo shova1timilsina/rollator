@@ -1,0 +1,49 @@
+# Camera calibration parameters for Arducam ToF
+# These should be calibrated for your specific camera setup
+
+camera:
+  resolution:
+    width: 640
+    height: 480
+  fps: 30
+  
+  # Intrinsic camera parameters (adjust through calibration)
+  intrinsics:
+    fx: 400.0  # Focal length X (pixels)
+    fy: 400.0  # Focal length Y (pixels)
+    cx: 320.0  # Principal point X (pixels)
+    cy: 240.0  # Principal point Y (pixels)
+  
+  # Distortion coefficients (5-element model)
+  distortion:
+    k1: 0.0
+    k2: 0.0
+    p1: 0.0
+    p2: 0.0
+    k3: 0.0
+  
+  # Depth range in millimeters
+  depth_range:
+    min: 100.0
+    max: 5000.0
+
+# Region of interest for legs detection
+roi:
+  # Percentage from top where legs begin (0.0 to 1.0)
+  legs_start_pct: 0.3
+  # Margin for left/right detection
+  margin_mm: 100.0
+
+# Gait analysis parameters
+gait:
+  # Number of frames to maintain in history
+  history_size: 30
+  
+  # Ground contact threshold (Z distance in mm)
+  ground_threshold_mm: 100.0
+  
+  # Minimum points for valid detection
+  min_cluster_size: 5
+  
+  # Joint smoothing window (frames)
+  smooth_window: 3

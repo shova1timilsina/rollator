@@ -1,0 +1,11 @@
+std_msgs/Header header
+float32 stride_length_mm
+float32 cadence_steps_per_min
+float32 step_width_mm
+float32 knee_flexion_deg
+float32 hip_flexion_deg
+float32 gait_velocity_mm_s
+float32 symmetry_index
+float32 stability_index
+string phase_left
+string phase_right

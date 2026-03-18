@@ -1,0 +1,6 @@
+float32 target_velocity_mm_s
+float32 target_angle_deg
+uint32 duration_ms
+---
+bool success
+string message
